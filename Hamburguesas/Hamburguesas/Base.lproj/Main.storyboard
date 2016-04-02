@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49v-h6-kgX">
+                                <rect key="frame" x="71" y="269" width="179" height="30"/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Quiero una Hamburguesa!">
+                                    <color key="titleColor" red="1" green="0.96572048710000002" blue="0.25611629790000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionQuieroHamburguer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8a-Rf-uTQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombrePais" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xMb-kH-uED">
+                                <rect key="frame" x="115" y="90" width="91" height="21"/>
+                                <color key="backgroundColor" red="0.25624360680000002" green="0.83597995920000001" blue="0.43978319310000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombreHamburguesa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tje-Kp-ssX">
+                                <rect key="frame" x="77" y="182" width="167" height="21"/>
+                                <color key="backgroundColor" red="0.25624360680000002" green="0.83597995920000001" blue="0.43978319310000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="49v-h6-kgX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2fF-Hc-gdc"/>
+                            <constraint firstItem="49v-h6-kgX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ao-gO-VRd"/>
+                            <constraint firstItem="xMb-kH-uED" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J5e-Pl-trC"/>
+                            <constraint firstItem="xMb-kH-uED" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="nx1-RS-pSV"/>
+                            <constraint firstItem="Tje-Kp-ssX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="162" id="qQP-zf-ZYE"/>
+                            <constraint firstItem="Tje-Kp-ssX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t32-a2-qb8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblHamburguesa" destination="Tje-Kp-ssX" id="sAz-uG-Zvg"/>
+                        <outlet property="lblPais" destination="xMb-kH-uED" id="5qA-9H-tHD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="319"/>
+        </scene>
+    </scenes>
+</document>
